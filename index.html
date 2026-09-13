@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Gent's Craft Barber</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">GENT'S <span>CRAFT</span></div>
+
+    <a href="#booking" class="top-btn">
+      Book Now
+    </a>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="small-title">PREMIUM BARBER SHOP</p>
+
+      <h1>
+        LOOK SHARP.<br>
+        FEEL CONFIDENT.
+      </h1>
+
+      <p class="hero-text">
+        Professional haircuts, beard styling and grooming
+        by skilled barbers.
+      </p>
+
+      <a href="#booking" class="main-btn">
+        Book Appointment
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="section">
+
+    <p class="section-small">OUR SERVICES</p>
+
+    <h2>Choose Your Style</h2>
+
+    <div class="services">
+
+      <div class="service">
+        <div class="service-icon">✂️</div>
+        <h3>Classic Haircut</h3>
+        <p>Clean and professional haircut.</p>
+        <strong>₹150</strong>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">💈</div>
+        <h3>Hair + Beard</h3>
+        <p>Complete haircut and beard styling.</p>
+        <strong>₹250</strong>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">🪒</div>
+        <h3>Beard Trim</h3>
+        <p>Shape and style your beard.</p>
+        <strong>₹100</strong>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">🔥</div>
+        <h3>Premium Styling</h3>
+        <p>Haircut with premium styling.</p>
+        <strong>₹300</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY US -->
+  <section class="why">
+
+    <p class="section-small">WHY CHOOSE US</p>
+
+    <h2>More Than A Haircut</h2>
+
+    <div class="features">
+
+      <div>
+        <span>✓</span>
+        <h3>Professional Barbers</h3>
+        <p>Experienced barbers who understand your style.</p>
+      </div>
+
+      <div>
+        <span>✓</span>
+        <h3>Clean & Comfortable</h3>
+        <p>A clean and comfortable grooming environment.</p>
+      </div>
+
+      <div>
+        <span>✓</span>
+        <h3>Easy Booking</h3>
+        <p>Book your appointment directly through WhatsApp.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+
+    <p class="section-small">BOOK YOUR VISIT</p>
+
+    <h2>Reserve Your Appointment</h2>
+
+    <form id="bookingForm">
+
+      <label>Your Name</label>
+      <input
+        type="text"
+        id="customerName"
+        placeholder="Enter your name"
+        required
+      >
+
+      <label>Choose Service</label>
+
+      <select id="service" required>
+
+        <option value="">
+          Select a service
+        </option>
+
+        <option value="Classic Haircut - ₹150">
+          Classic Haircut - ₹150
+        </option>
+
+        <option value="Hair + Beard - ₹250">
+          Hair + Beard - ₹250
+        </option>
+
+        <option value="Beard Trim - ₹100">
+          Beard Trim - ₹100
+        </option>
+
+        <option value="Premium Styling - ₹300">
+          Premium Styling - ₹300
+        </option>
+
+      </select>
+
+
+      <label>Preferred Date</label>
+
+      <input
+        type="date"
+        id="date"
+        required
+      >
+
+
+      <label>Preferred Time</label>
+
+      <select id="time" required>
+
+        <option value="">
+          Select time
+        </option>
+
+        <option>10:00 AM</option>
+        <option>11:00 AM</option>
+        <option>12:00 PM</option>
+        <option>1:00 PM</option>
+        <option>3:00 PM</option>
+        <option>4:00 PM</option>
+        <option>5:00 PM</option>
+        <option>6:00 PM</option>
+        <option>7:00 PM</option>
+        <option>8:00 PM</option>
+
+      </select>
+
+
+      <button type="submit" class="whatsapp-btn">
+        Book on WhatsApp
+      </button>
+
+    </form>
+
+  </section>
+
+
+  <!-- SHOP INFO -->
+  <section class="info">
+
+    <div class="info-box">
+      <span>📍</span>
+      <h3>Location</h3>
+      <p>Badnera Road, Amravati</p>
+    </div>
+
+    <div class="info-box">
+      <span>🕐</span>
+      <h3>Opening Hours</h3>
+      <p>10:00 AM – 9:00 PM</p>
+    </div>
+
+    <div class="info-box">
+      <span>📞</span>
+      <h3>Contact</h3>
+      <p>+91 90000 00000</p>
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="logo">
+      GENT'S <span>CRAFT</span>
+    </div>
+
+    <p>
+      Premium grooming for modern men.
+    </p>
+
+    <p class="copyright">
+      © 2026 Gent's Craft Barber
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
