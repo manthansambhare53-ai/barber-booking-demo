@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 25px 15px;
+  background: #181818;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin: 7px 0 0;
+  color: #aaa;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.calendar-header button {
+  border: none;
+  background: #292929;
+  color: white;
+  width: 45px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.calendar-header button:hover {
+  background: #3a3a3a;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.day-name {
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.day {
+  min-height: 70px;
+  background: #1d1d1d;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.day:hover {
+  border-color: #666;
+}
+
+.day-number {
+  font-weight: bold;
+}
+
+.today {
+  border: 2px solid #fff;
+}
+
+.selected {
+  background: #292929;
+}
+
+.has-booking {
+  position: relative;
+}
+
+.booking-dot {
+  width: 8px;
+  height: 8px;
+  background: #35d07f;
+  border-radius: 50%;
+  display: block;
+  margin-top: 8px;
+}
+
+.appointments {
+  margin-top: 30px;
+}
+
+.appointments h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.booking-card {
+  background: #1d1d1d;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.booking-time {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.booking-name {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.booking-service {
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #263d30;
+  color: #6ee7a0;
+  font-size: 12px;
+}
+
+.empty {
+  color: #888;
+  background: #1d1d1d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+
+  main {
+    padding: 12px;
+  }
+
+  .day {
+    min-height: 55px;
+    padding: 6px;
+  }
+
+  .calendar {
+    gap: 3px;
+  }
+
+  .day-name {
+    font-size: 11px;
+  }
+
+  .calendar-header h2 {
+    font-size: 18px;
+  }
+
+}
