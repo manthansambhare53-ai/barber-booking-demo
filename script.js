@@ -15,7 +15,7 @@ bookingForm.addEventListener("submit", function(event) {
 
   // Demo barber WhatsApp number
   // Replace this with the real barber's number when selling the website.
-  const barberNumber = "919000000000";
+  const barberNumber = "918446348928";
 
   const message =
     `Hello Gent's Craft Barber!%0A%0A` +
