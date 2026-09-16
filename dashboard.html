@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Nexora Barber Dashboard</title>
+
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>NEXORA BARBER</h1>
+    <p>Appointment Dashboard</p>
+  </header>
+
+  <main>
+
+    <div class="calendar-header">
+      <button id="prevMonth">←</button>
+
+      <h2 id="monthYear"></h2>
+
+      <button id="nextMonth">→</button>
+    </div>
+
+    <div class="calendar" id="calendar"></div>
+
+    <section class="appointments">
+
+      <h2 id="selectedDate">
+        Select a date
+      </h2>
+
+      <div id="bookingList">
+        <p>Select a date to see appointments.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="dashboard.js"></script>
+
+</body>
+</html>
